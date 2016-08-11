@@ -1,0 +1,58 @@
+* {
+	font-family: 'Futura', sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.cont2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.right{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	width: 400px;
+	height: 400px;
+	background: #1B7FDB;
+	margin-right: 5px;
+}
+
+.left{
+	display: flex;
+	justify-content: flex-start;;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	width: 400px;
+	height: 400px;
+	background: #1B7FDB;
+	margin-left: 5px;
+}
+
+h3	{
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+h2	{
+	font-size: 86px;
+}
+
+.red {
+	background: #F0462B;
+}
+
+.green {
+	background: #23AB5A;
+}

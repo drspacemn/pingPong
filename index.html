@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+	<head>
+		<meta charset="utf-8">
+		<title>Ping Pong</title>
+		<link rel="stylesheet" href="/main.css" media="screen" title="no title" charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="/app.js" charset="utf-8"></script>
+	</head>
+	<body ng-controller='myController'>
+		<div class="container">
+			<div class="item">
+				<h1>Ping Pong Score Keeper</h1>
+			</div>
+			<div class="item cont2">
+				<div class="right" ng-click='addRight()' ng-class='{green: obj.score1 == 11, red: obj.score2 == 11}'>
+					<div class="title">
+						<h3>Player 1</h3>
+					</div>
+					<div class="score" ng-model='score1'>
+						<h2>{{obj.score1}}</h2>
+					</div>
+					<div class="serving" ng-show='obj.total2 % 2 == 0'>
+						<h3>serving</h3>
+					</div>
+				</div>
+				<div class="left" ng-click='addLeft()' ng-class='{green: obj.score2 == 11, red: obj.score1 == 11}'>
+					<div class="title">
+						<h3>Player 2</h3>
+					</div>
+					<div class="score" ng-model='score2'>
+						<h2>{{obj.score2}}</h2>
+					</div>
+					<div class="serving" ng-show='obj.total2 % 2 !== 0'>
+						<h3>serving</h3>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="item">
+				<button  ng-click="resetAll()">Reset</button>
+			</div>
+		</div>
+	</body>
+</html>
